@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff0f5;
+            font-family: 'Segoe UI', sans-serif;
+            color: #333;
+        }
+        h1 {
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            font-weight: normal;
+            text-align: center;
+        }
+        .media-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        .side-images {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .side-images img {
+            width: 140px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+        video {
+            width: 420px;
+            height: auto;
+            max-height: 80vh;
+            border-radius: 16px;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+        .audio-button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #beaf90;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transition: background-color 0.3s ease;
+        }
+        .audio-button:hover {
+            background-color: #beaf90;
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday, My Love 🎂💕</h1>
+    <div class="media-wrapper">
+        <div class="side-images">
+            <img src="image3.jpg" alt="Left Image 1">
+            <img src="image1.jpg" alt="Left Image 2">
+        </div>
+        <video id="birthdayVideo" autoplay muted loop playsinline>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="side-images">
+            <img src="image4.jpg" alt="Right Image 1">
+            <img src="image2.jpg" alt="Right Image 2">
+        </div>
+    </div>
+    <button class="audio-button" onclick="enableAudio()">Bukak Sound Sayanggg🔊</button>
+
+    <script>
+        function enableAudio() {
+            const video = document.getElementById('birthdayVideo');
+            video.muted = false;
+            video.play(); // Ensure video continues playing with audio
+        }
+    </script>
+</body>
+</html>

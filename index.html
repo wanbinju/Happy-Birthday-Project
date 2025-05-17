@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>This one is for my Ashikin</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+    Hey Noor Ashikin!<br />
+    Do you remember the day we first met?<br />
+    <span class="comments">->At school right </span><br />
+    Since that day a spark begun;<br />
+    Your face. Your voice. Your words.<br />
+    Your everything got imprinted in my heart;<br />
+    As the time went on;<br />
+    The bond grew stronger and stronger;<br />
+    From infatuation to love;<br />
+    We’ve come a long way;<br />
+    There were fights;<br />
+    And maybe more ahead.<br />
+    But our bond? Selalu grow balik, lagi kuat.<br />
+
+    <br />
+    Happy birthday, sayanggg sayaa Noor Ashikin 💖<br />
+	Semoga awak sentiasa sihat dan selalu dimurahkan rezeki.Aminnn<br />
+	Saya harap awak dapat kejar apa yang awak impikan selama ni<br />
+	saya akan sentiada ada dengan awak susah atau senang<br />
+    Kadang hidup ni tak mudah, I know.<br />
+    Tapi awak selalu kuat, selalu sabar.<br />
+    I’m really proud of you — always.<br />
+    You are enough. More than enough.<br />
+    Tak kisah apa pun jadi lepas ni, I’ll always be rooting for you.<br />
+    Semoga hari ni bawa senyuman dan tahun ni bawa kebahagiaan.<br />
+    I may not be perfect, but my love for you — that's real.<br />
+    Let’s keep growing, slowly but surely.<br />
+
+    <br />
+    All I want to say is:<br />
+    Baby, I will love you forever;<br />
+	I Love Youu Sayanggg ayee 💖💖 <br />
+    <br />
+    cuba tekan gambar love kat bawah hehe<br />
+    <br />
+    <span id="heartspan">
+    <a href="video.html" target="_blank">
+        <i class="fas fa-heart" id="icon"></i>
+    </a>
+	</span>
+</div>
+
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					Happy Birthday Sayanggg
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					I LOVE YOU SO MUCH<br/>
+					<div class="signature">- Lovely, Izwan</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2005, 5, 19);
+together.setHours(0);
+together.setMinutes(50);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
